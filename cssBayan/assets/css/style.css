@@ -1,0 +1,109 @@
+body {
+	width: 60%;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+	padding: 0 30px;
+}
+
+.wrapper:hover label,
+label::after {
+	color: black;
+}
+
+.wrapper:hover label::after {
+	display: block;
+}
+
+h1 {
+	font-size: 3em;
+	color: black;
+}
+
+.description {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+input {
+	display: none;
+}
+
+label {
+	display: block;
+	margin: 15px;
+	padding: 0;
+	font-size: 1.4em;
+	color: blue;
+	transition: ease 0.6s;
+	position: relative;
+	cursor: pointer;
+}
+
+label::after {
+	display: none;
+	font-family: 'Font Awesome 6 Free';
+	content: '\f067';
+	font-weight: bold;
+	position: absolute;
+	right: 1vh;
+	top: 0.5vh;
+}
+
+input:checked + label::after {
+	font-family: 'Font Awesome 6 Free';
+	content: '\f00d';
+	color: black;
+	font-weight: bold;
+}
+
+.image {
+	display: flex;
+	text-align: center;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+input + label + .image {
+	display: none;
+}
+
+input:checked + label + .image {
+	display: block;
+}
+
+.image img {
+	height: 100%;
+	width: 60%;
+}
+
+@media (max-width: 820px) {
+	body {
+		width: 70%;
+	}
+	h1 {
+		font-size: 1.3em;
+	}
+
+	label {
+		font-size: 0.8em;
+	}
+}
+
+@media (max-width: 320px) {
+	body {
+		width: 100%;
+	}
+	h1 {
+		font-size: 1em;
+	}
+
+	label {
+		font-size: 0.5em;
+	}
+}
