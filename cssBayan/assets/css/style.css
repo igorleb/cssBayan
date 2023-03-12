@@ -38,7 +38,7 @@ label {
 	display: block;
 	margin: 15px;
 	padding: 0;
-	font-size: 1.5em;
+	font-size: 1.4em;
 	color: blue;
 	transition: ease 0.6s;
 	position: relative;
@@ -82,4 +82,28 @@ input:checked + label + .image {
 	width: 60%;
 }
 
-@media();
+@media (max-width: 820px) {
+	body {
+		width: 70%;
+	}
+	h1 {
+		font-size: 1.3em;
+	}
+
+	label {
+		font-size: 0.8em;
+	}
+}
+
+@media (max-width: 320px) {
+	body {
+		width: 100%;
+	}
+	h1 {
+		font-size: 1em;
+	}
+
+	label {
+		font-size: 0.5em;
+	}
+}
