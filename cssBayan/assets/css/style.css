@@ -7,8 +7,7 @@ body {
 }
 
 .wrapper {
-	padding: 30px;
-	//cursor: pointer;
+	padding: 0 30px;
 }
 
 .wrapper:hover label,
@@ -21,6 +20,7 @@ label::after {
 }
 
 h1 {
+	font-size: 3em;
 	color: black;
 }
 
@@ -38,6 +38,7 @@ label {
 	display: block;
 	margin: 15px;
 	padding: 0;
+	font-size: 1.5em;
 	color: blue;
 	transition: ease 0.6s;
 	position: relative;
@@ -48,7 +49,6 @@ label::after {
 	display: none;
 	font-family: 'Font Awesome 6 Free';
 	content: '\f067';
-	font-size: 22px;
 	font-weight: bold;
 	position: absolute;
 	right: 1vh;
@@ -81,3 +81,5 @@ input:checked + label + .image {
 	height: 100%;
 	width: 60%;
 }
+
+@media();
